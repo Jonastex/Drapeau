@@ -19,7 +19,7 @@ class drapeau
 		class haut: RscButton
 		{
 			idc = -1;
-			onButtonClick = [flag1, 1] call BIS_fnc_animateFlag;
+			onButtonClick = [this, 1] call BIS_fnc_animateFlag;
 			text = "click pour mettre le drapeaux en hauteur"; //--- ToDo: Localize;
 			x = 0.300736 * safezoneW + safezoneX;
 			y = 0.210987 * safezoneH + safezoneY;
@@ -29,7 +29,7 @@ class drapeau
 		class bas: RscButton
 		{
 			idc = -1;
-			onButtonClick = [flag1, 0] call BIS_fnc_animateFlag;
+			onButtonClick = [this, 0] call BIS_fnc_animateFlag;
 			text = "click pour mettre le drapeaux en bas"; //--- ToDo: Localize;
 			x = 0.300736 * safezoneW + safezoneX;
 			y = 0.465998 * safezoneH + safezoneY;
