@@ -18,7 +18,7 @@ class drapeau
 	{
 		class haut: RscButton
 		{
-			idc = 152206;
+			idc = -1;
 			onButtonClick = [flag1, 1] call BIS_fnc_animateFlag;
 			text = "click pour mettre le drapeaux en hauteur"; //--- ToDo: Localize;
 			x = 0.300736 * safezoneW + safezoneX;
@@ -28,7 +28,7 @@ class drapeau
 		};
 		class bas: RscButton
 		{
-			idc = 162206;
+			idc = -1;
 			onButtonClick = [flag1, 0] call BIS_fnc_animateFlag;
 			text = "click pour mettre le drapeaux en bas"; //--- ToDo: Localize;
 			x = 0.300736 * safezoneW + safezoneX;
@@ -38,7 +38,7 @@ class drapeau
 		};
 		class quittea: RscButtonMenuCancel
 		{
-			idc = 172206;
+			idc = -1;
 			onButtonClick = "closeDialog 0;";
 			x = 0.755059 * safezoneW + safezoneX;
 			y = 0.108982 * safezoneH + safezoneY;
